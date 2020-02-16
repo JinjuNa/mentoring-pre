@@ -281,7 +281,7 @@ return {
     float: left;
     margin-right: 3.7em;
   }
-  .business::after{
+  .businesstype::after{
     display: block;
     clear: both;
     content:'';
@@ -338,6 +338,38 @@ return {
   .char1, .char2{
     margin:0;
     width:100%;
+    height: auto;
+  }
+
+  .subicon>div{
+    margin:0;
+  }
+
+  .char1:last-child{
+    margin:0;
+  }
+
+  .char2:last-child{
+    margin:0;
+  }
+
+  .up{
+    float:none;
+    margin:0;
+  }
+  .type{
+    margin:0;
+  }
+  .business, .businesstype{
+    width:100%;
+    height: auto;
+    margin:0;
+    position: static;
+  }
+  @media all and (max-width:1023px){
+    .num{
+      margin-left:0;
+    }
   }
 }
 </style>

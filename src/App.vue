@@ -2,6 +2,7 @@
   <div id="app">
     <div id="logo"><a href="/"><img src="./assets/main_logo.png"></a></div>
     <Menu></Menu>
+    <MenuMobile></MenuMobile>
     <router-view></router-view>
     <Footer></Footer>
   </div>
@@ -10,12 +11,14 @@
 <script>
 import Menu from './components/Menu.vue'
 import Footer from './components/Footer'
+import MenuMobile from './components/MenuMobile.vue'
 
 export default {
   name: 'app',
   components: {
     Menu,
-    Footer
+    Footer,
+    MenuMobile
   }
 }
 </script>
@@ -123,9 +126,14 @@ export default {
   } */
   @media all and (max-width:1023px){
     #logo{
-      position: static;
+      position: fixed;
+      top:0;
+      left: 0;
+      width:100%;
       text-align: center;
       padding-top:5vw;
+      background-color: white;
+      z-index: 10;
     }
 
     #logo img{
@@ -133,7 +141,27 @@ export default {
     }
 
     .menu{
-      right: 20px;
+      right: 16px;
+      top:20px;
+    }
+
+    .contents>h2{
+      font-size:17px;
+    }
+
+    .par{
+      font-size:13px;
+    }
+
+    .sub{
+      padding-bottom: 150px;
+      padding-top:50px;
+      /* width: 95%;
+      margin:0 auto; */
+    }
+
+    br{
+      display: none;
     }
   }
 </style>

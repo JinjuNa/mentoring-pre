@@ -43,14 +43,55 @@ return {
           {text : "패러다임스쿨", url : "/program/school/paradigm"},
           {text : "경제스쿨", url : "/program/school/economic"},
           {text : "창업스쿨", url : "/program/school/startup"}
-          // 경제스쿨, 창업스쿨 링크 설정!
       ]
   };
 }
 }
+window.onload = function(){
+  const ul = document.querySelector('.schoolMenu');
+  const li = ul.querySelectorAll('li');
+  li[0].classList.add('active');
+  li.forEach(function(e){
+    e.addEventListener('click', function(){
+      for(var i=0; i<li.length; i++){
+        li[i].classList.remove('active');
+      }
+      this.classList.add('active');
+    })
+  })
+}
+
 </script>
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style>
+<style scoped>
+  .schoolMenu li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    font-size: 15px;
+    color: #3642c6;
+    height: 30px;
+    line-height: 30px;
+  }
 
+  .schoolMenu li.active{
+    background-color: #3642c6;
+    color: #c4f580;
+  }
+
+  .schoolMenu li a{
+    display: block;
+    width:100%;
+  }
+
+  .schoolMenu{
+    border-bottom: 2px solid #3642c6;
+  }
+
+  .schoolMenu::after{
+    display: block;
+    clear: both;
+    content:'';
+  }
 </style>

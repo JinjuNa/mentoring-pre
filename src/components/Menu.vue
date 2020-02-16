@@ -73,10 +73,10 @@ export default {
     font-size: 1rem;
     letter-spacing: 0.305em;
     }
-  .gnb li{
+  .gnb>li{
     margin-bottom: 50px;
   }
-  .gnb li a{
+  .gnb>li a{
     position: relative;
     
   }
@@ -93,33 +93,41 @@ export default {
 
   /* 폰트 모양, 크기에 따라서 left값 조정필요 */
 
-  .gnb li:nth-child(1):hover .underline{
+  .gnb>li:nth-child(1):hover .underline{
     width: 92px;
   }
 
-  .gnb li:nth-child(2):hover .underline{
+  .gnb>li:nth-child(2):hover .underline{
     width: 117px;
   }
 
-  .gnb li:nth-child(3):hover .underline{
+  .gnb>li:nth-child(3):hover .underline{
     width: 130px;
   }
 
-  .gnb li:nth-child(4):hover .underline{
+  .gnb>li:nth-child(4):hover .underline{
     width: 117px;
   }
 
-  .gnb li:nth-child(5):hover .underline{
+  .gnb>li:nth-child(5):hover .underline{
     width: 130px;
   }
 
   @media all and (max-width:1023px){
+    .menu{
+      display: none;
+    }
+    /* .menuButton span{
+      width:25px;
+      height: 3px;
+      margin-bottom: 6px;
+    }
     .gnb{
       display: none;
     }
 
     .subMenu{
       display: none;
-    }
+    } */
   }
 </style>
