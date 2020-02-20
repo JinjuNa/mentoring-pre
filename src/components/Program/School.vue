@@ -49,6 +49,9 @@ return {
 }
 window.onload = function(){
   const ul = document.querySelector('.schoolMenu');
+  if(!ul){
+    return false;
+  }
   const li = ul.querySelectorAll('li');
   li[0].classList.add('active');
   li.forEach(function(e){

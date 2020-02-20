@@ -1,12 +1,12 @@
 <template>
   <div class="main">
     <div class="wrap">
-    <h1><a href="/"><img src="../../assets/logo.png" alt="메인로고"></a></h1>
+    <h1><a href="#"><img src="../../assets/logo.png" alt="메인로고"></a></h1>
     <div class="mainLink_wrap">
     <div class="mainLink blue">
         <p>Mentoring-lab에<br>대해 알고 싶으세요?</p>
         <div class="link">
-            <a href="/">홈페이지</a>
+            <a href="#">홈페이지</a>
         </div>
     </div>
     <div class="mainLink green">
@@ -125,9 +125,9 @@ export default {
     body{
       background-color: gold;
     }
-
     .wrap{
       width:90%;
+      padding-top:50px;
     }
 
     h1 img{
