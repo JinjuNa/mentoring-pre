@@ -22,7 +22,7 @@ export default {
 return {
     title : {
       text : "창업스쿨",
-      img : "startupschool.png"
+      img : require("../../../assets/start-upschool.png")
       // 경로 수정!
     }
   };

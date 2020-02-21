@@ -117,7 +117,7 @@ export default {
 return {
     title : {
       text : "비전스쿨",
-      img : "./assets/visionschool.png"
+      img : require("../../../assets/visionschool.png")
     }
   };
 }
