@@ -9,9 +9,10 @@
 </template>
 
 <script>
-import Menu from './components/Menu.vue'
-import Footer from './components/Footer'
-import MenuMobile from './components/MenuMobile.vue'
+import Menu from './components/Menu.vue';
+import Footer from './components/Footer';
+import MenuMobile from './components/MenuMobile.vue';
+import "./style/default.css";
 
 export default {
   name: 'app',
@@ -24,144 +25,5 @@ export default {
 </script>
 
 <style>
-  * {
-    margin:0;
-    padding: 0;
-  }
-  body{
-    font-size:62.51%;
-  }
-  ul {
-    list-style: none;
-  }
-
-  a{
-    color: inherit;
-    text-decoration: none;
-  }
-  #app{
-    position:relative;
-    
-  }
-
-  #logo{
-    position:absolute;
-    top:40px;
-    left:50px;
-  }
-
-  #logo img{
-    width: 10vw;
-  }
-
-  .wrap{
-    width:60%;
-    margin:0 auto;
-  }
-  .menu{
-    position:fixed;
-    top:40px;
-    right: 70px;
-    text-align: right;
-  }
-
-  .sub{
-    padding-bottom: 460px;
-  }
-  .footer{
-    width: 100%;
-    position:absolute;
-    bottom:0;
-    left:0;
-    /* height: 460px; */
-    /* z-index: 100; */
-  }
-
-  .contents>h2{
-    text-align:center;
-    color:#3642c6;
-    /* 색깔 정보를 알아야함. */
-    margin-top:7.5em;
-    margin-bottom:4.43em;
-    line-height:170%;
-    font-size: 231%;
-  }
-
-  .par{
-    font-size: 149.3%;
-    text-align:center;
-    color:#3642c6;
-    font-weight: bolder;
-    /* margin-top:4.06em; */
-    margin-bottom: 4.06em;
-    /* 내용 전체 위,아래 margin 값을 측정해야함. */
-    line-height:200%;
-  }
-
-  .par:first-child{
-    margin-top:0px;
-  }
-
-  .download{
-    text-align: center;
-    border:solid 0.2em #c4f580;
-    border-radius: 15px;
-    width: 11.87em;
-    height: 2.18em;
-    color: #3642c6;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    font-weight: bold;
-    font-size: 1.25em;
-    line-height: 2.18em;
-  }
-  /* .download{
-    display: block;
-    width: 30%;
-    height: auto;    
-    /* 중앙정렬 해야함 */
-    /* .line{
-    초록색밑줄-메뉴와 동일
-  } */
-  @media all and (max-width:1023px){
-    #logo{
-      position: fixed;
-      top:0;
-      left: 0;
-      width:100%;
-      text-align: center;
-      padding-top:5vw;
-      background-color: white;
-      z-index: 10;
-    }
-
-    #logo img{
-      width: 50vw;
-    }
-
-    .menu{
-      right: 16px;
-      top:20px;
-    }
-
-    .contents>h2{
-      font-size:17px;
-    }
-
-    .par{
-      font-size:13px;
-    }
-
-    .sub{
-      padding-bottom: 150px;
-      padding-top:50px;
-      /* width: 95%;
-      margin:0 auto; */
-    }
-
-    br{
-      display: none;
-    }
-  }
+ 
 </style>

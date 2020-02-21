@@ -16,43 +16,8 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .footer{
-      height: 25vw;
-      background-image: url(../assets/footer_background.png);
-      background-size: 100% auto;
-      background-repeat: no-repeat;
-      background-position: center bottom;
-  }
-
-  .footer_contents{
-      width:100%;
-      padding-top:10vw;
-      /* position:absolute;
-      left:0;
-      bottom:5vw; */
-      text-align: center;
-      vertical-align: bottom;
-      
-  }
-
-  .footer_contents p {
-      margin-top:30px;
-      font-size: 15px;
-      color:white;
-  }
 
   @media all and (max-width:1023px){
-    .footer img{
-      width: 30%;
-    }
 
-    .footer_contents p {
-      margin-top:0;
-    }
-
-    .footer_contents{
-      margin-top:5vh;
-      background-color: #3e3a39;
-    }
   }
 </style>

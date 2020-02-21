@@ -44,53 +44,9 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .slider{
-    /* background-color: gold; */
-    padding-top:20vh;
-    height: 80vh;
-    padding-bottom: 50vh;
-    /* position: absolute; */
-    width:60%;
-    margin:0 auto;
-  }
 
-  .slider img{
-    width:100%;
-  }
-
-  .mainSlider_wrap{
-    width: 90%;
-    margin:0 auto;
-  }
-
-.mainSlider{
-  position: relative;
-  background-color:#493fd3;
-  margin-top:calc(80vh + 100px);
-}
-  .mainSlider:before{
-    content:'';
-    display: block;
-    position: absolute;
-    top:-100px;
-    width:100%;
-    height:400px;
-    /* padding-top: 10vw; */
-    background-image: url(../../assets/background.png);
-    background-size: cover;
-    background-position: center top;
-    background-repeat:no-repeat;
-  }
 
   @media all and (max-width:1023px){
-    .mainSlider{
-      margin-top:15vh;
-    }
 
-    .slider{
-      padding-top:5vh;
-      height:30vh;
-      padding-bottom:0;
-    }
   }
 </style>

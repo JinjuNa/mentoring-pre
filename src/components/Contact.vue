@@ -45,22 +45,4 @@ return {
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.icon_contact{
-  width:160px;
-  margin:0 auto;
-}
-.sns li{
-  width:30px;
-}
-
-.sns li img{
-  width:100%;
-}
-.map iframe{
-  width:100%;
-  height: 500px;
-}
-/* .title{
-  margin-right:10%;
-} */
 </style>

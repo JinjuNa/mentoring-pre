@@ -47,37 +47,10 @@ return {
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  .contents{
-    width: 61%;
-    margin: 0 auto;
-  }
-
-  .contents .diagram{
-    width: 470px;
-    margin:0 auto;
-  }
-
-  .sub{
-    background-image: url(../assets/background_side.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center bottom;
-  }
-
-  .contents img{
-    width: 100%;
-    height: auto;
-    /* text-align: center;  이렇게는 안된다.*/
-  }
+    
 
   @media all and (max-width:1023px){
-    .contents{
-      width:95%;
-    }
 
-    .contents .diagram{
-      width:100%;
-    }
   }
 
 

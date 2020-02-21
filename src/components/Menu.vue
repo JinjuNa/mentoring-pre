@@ -1,6 +1,6 @@
 <template>
   <div class="menu">
-    <div class="menuButton" id="menuButton">
+    <div class="menuButton" id="menuButton" v-on:click = "clickMenu">
       <span></span>
       <span></span>
       <span></span>
@@ -17,19 +17,10 @@
       </li>
     </ul>
   </div>
+
 </template>
 
 <script>
-
-window.onload = function(){
-  document.getElementById("menuButton").onclick = function(){
-    var gnb = document.getElementById("gnb");
-    if(gnb.style.display == "none")
-      gnb.style.display = "block";
-    else
-      gnb.style.display = "none";
-  }
-}
 export default {
   name: 'Menu',
   data : function() {
@@ -48,7 +39,16 @@ export default {
         {text : "실크로드", url : "/program/silkroad"}
       ]
     };
-}
+  },
+  methods : {
+    clickMenu : function(){
+       var gnb = document.getElementById("gnb");
+    if(gnb.style.display == "none")
+      gnb.style.display = "block";
+    else
+      gnb.style.display = "none";
+    }
+  }
 }
 </script>
 
@@ -56,6 +56,9 @@ export default {
 <style scoped>
   .menuButton{
     float:right;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
     
   }
   .menuButton span{
@@ -68,6 +71,7 @@ export default {
 
   .gnb, .subMenu{
     z-index: 10;
+    position: relative;
   }
   .gnb{
     font-size: 1rem;
