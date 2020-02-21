@@ -6,8 +6,9 @@
         <h3>비전스쿨 24주 과정 커리큘럼</h3>
         <p class="par">꿈과 비전을 찾는 기초훈련과정</p>
         <section>
-          
-          <h2><img src="" alt="자아발견과정">자아발견과정</h2>
+          <!-- 임시 이미지 -->
+          <img src="../../../assets/visionschool_roadmap.png" alt="">
+          <!-- <h2><img src="" alt="자아발견과정">자아발견과정</h2>
           <ul class="">
             <li class="blue box">
               <img src="" alt="1">
@@ -99,7 +100,7 @@
           <ul>
             <li><img src="" alt="1">비전스쿨에서의 변화된 모습을 PPT로 발표</li>
             <li><img src="" alt="2">취약계층 아동과의 결연을 통해 매월 1만원 기부활동</li>
-          </ul>
+          </ul> -->
           
         </section>
       </content>

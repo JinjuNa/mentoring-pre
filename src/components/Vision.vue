@@ -5,7 +5,7 @@
       <div class="contents">
         <h2>실력과 인성을 겸비한 청년들을 양성하는 곳,<br>
          여기는 MENTORING LAB 입니다.</h2>
-        <div>
+        <div class="diagram">
           <img src="../assets/vision_diagram.png">
         </div>
         <p class="par">사람들에게 잘 보이기 위한 삶에서 벗어나서<br>
@@ -52,6 +52,11 @@ return {
     margin: 0 auto;
   }
 
+  .contents .diagram{
+    width: 470px;
+    margin:0 auto;
+  }
+
   .sub{
     background-image: url(../assets/background_side.png);
     background-repeat: no-repeat;
@@ -68,6 +73,10 @@ return {
   @media all and (max-width:1023px){
     .contents{
       width:95%;
+    }
+
+    .contents .diagram{
+      width:100%;
     }
   }
 

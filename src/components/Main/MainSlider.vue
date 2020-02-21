@@ -9,7 +9,7 @@
       </ul> -->
 
       <div class="slider">
-        <carousel :per-page="1" :navigate-to="someLocalProperty" :mouse-drag="true">
+        <carousel :per-page="1" :mouse-drag="true">
           <slide>
             <img src="../../assets/slide1.png">
           </slide>
@@ -50,7 +50,7 @@ export default {
     height: 80vh;
     padding-bottom: 50vh;
     /* position: absolute; */
-    width:70vw;
+    width:60%;
     margin:0 auto;
   }
 

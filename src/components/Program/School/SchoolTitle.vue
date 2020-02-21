@@ -17,6 +17,19 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .schoolTitle{
-        background-color: #eee;
+        text-align: center;
+        margin-top:70px;
+        margin-bottom:30px;
+    }
+
+    .schoolTitle p{
+      font-size: 13px;
+      color:#c4f580;
+    }
+
+    .schoolTitle h3{
+      font-size: 25px;
+      color:#3642c6;
+      margin-bottom:40px;
     }
 </style>
