@@ -60,6 +60,19 @@ window.onload = function(){
     else
       gnb.style.display = "none";
   }
+
+  const ul = document.querySelector('#gnbM');
+  // if(!ul){
+  //   return false;
+  // }
+  const li = ul.querySelectorAll('li');
+  li.forEach(function(e){
+    e.addEventListener('click', function(){
+      ul.style.display = "none";
+    })
+  })
+
+
 }
 export default {
   name: 'Menu',

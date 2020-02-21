@@ -129,7 +129,7 @@ h1{
       width:90%;
       padding-top:50px;
     }
-    br{
+    .main br{
         display: block;
     }
     h1 img{
@@ -163,6 +163,7 @@ h1{
     /* mainSlider */
     .mainSlider{
         margin-top:15vh;
+        padding-bottom: 200px;
       }
   
       .slider{
