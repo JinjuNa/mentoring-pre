@@ -525,8 +525,14 @@
         width:100%;
     }
 
+    .contents p{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
     /* program */
-
+    .program .txt br{
+      display: block;
+    }
     .schoolMenu li{
         font-size:13px;
     }

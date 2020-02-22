@@ -11,16 +11,20 @@
       <div class="slider">
         <carousel :per-page="1" :mouse-drag="true" >
           <slide>
-            <img src="../../assets/slide1.png">
+            <img src="../../assets/slide1.png" class="pcSlider">
+            <img src="../../assets/sliderM1.png" class="mobileSlider">
           </slide>
           <slide>
-            <img src="../../assets/slide2.png">
+            <img src="../../assets/slide2.png" class="pcSlider">
+            <img src="../../assets/sliderM2.png" class="mobileSlider">
           </slide>
           <slide>
-            <img src="../../assets/slide3.png">
+            <img src="../../assets/slide3.png" class="pcSlider">
+            <img src="../../assets/sliderM3.png" class="mobileSlider">
           </slide>
           <slide>
-            <img src="../../assets/slide4.png">
+            <img src="../../assets/slide4.png" class="pcSlider">
+            <img src="../../assets/sliderM4.png" class="mobileSlider">
           </slide>
         </carousel>
       </div>
@@ -44,9 +48,20 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-
+.pcSlider{
+  display: block;
+}
+  .mobileSlider{
+    display: none;
+  }
 
   @media all and (max-width:1023px){
+    .mobileSlider{
+      display: block;
+    }
 
+    .pcSlider{
+      display: none;
+    }
   }
 </style>
