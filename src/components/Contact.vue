@@ -2,7 +2,7 @@
   <div class="sub">
     <SubTitle v-bind:titledata = "title"></SubTitle>
     <!--  -->
-    <div class="recruit">
+    <div class="contact">
       <div class="contents">
         <h2><div class="icon_contact"><img src="../assets/icon_contact.png"></div></h2>
         <p>

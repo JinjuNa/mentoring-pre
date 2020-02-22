@@ -126,6 +126,8 @@
     height: auto;
     /* text-align: center;  이렇게는 안된다.*/
   }
+
+
   /* footer */
 
   .footer{
@@ -186,7 +188,40 @@
     content:'';
   }
 
+  .roadmap{
+      width: 700px;
+      margin:0 auto;
+  }
 
+  /* history */
+
+  .historyImg{
+    width:70%;
+    margin:0 auto;
+  }
+  /* program */
+
+  .contents>h2.img{
+    margin-top: 130px;
+    
+  }
+
+  .program .icon{
+    width:180px;
+    margin-right: 25px;
+    /* margin-bottom: 70px; */
+  }
+
+  .program span{
+    vertical-align: top;
+    display: inline-block;
+    text-align: left;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .program span.txt{
+    margin-bottom:75px;
+  }
   /* recruit */
 
   .par{
@@ -420,8 +455,11 @@
   .icon li p{
     font-size:12px;
   } */
+  
   /* contact */
-
+  .contact .contents h2{
+    margin-top:50px;
+  }
   .icon_contact{
     width:160px;
     margin:0 auto;
@@ -491,6 +529,9 @@
 
     .schoolMenu li{
         font-size:13px;
+    }
+    .roadmap{
+        width:100%;
     }
     /* footer */
     .footer{

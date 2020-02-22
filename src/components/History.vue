@@ -4,7 +4,10 @@
     <!--  -->
     <div class="history">
       <div class="contents">
-        <div class="gray">OUR START</div>
+        <div class="historyImg">
+          <img src="../assets/history.png">
+        </div>
+        <!-- <div class="gray">OUR START</div>
         <div class="yearBox right">
           <h2>2012</h2>
           <ul>
@@ -56,7 +59,7 @@
             <li>초기창업패키지 창업과정 4개 아이템 선정</li>
           </ul>
         </div>
-        <div class="gray">OUR STORY WILL GO ON</div>
+        <div class="gray">OUR STORY WILL GO ON</div> -->
       </div>
     </div>
   </div>

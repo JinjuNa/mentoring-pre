@@ -21,6 +21,7 @@
 </template>
 
 <script>
+
 export default {
   name: 'Menu',
   data : function() {
@@ -50,6 +51,18 @@ export default {
     }
   }
 }
+
+window.onload = function(){
+  alert("hi");
+  const ul = document.querySelector('.gnb');
+  const li = ul.getElementsByTagName('li');
+  const sub = document.querySelector('.subMenu')
+  li[2].addEventListener('click', function(){
+    alert("hi");
+    sub.style.display == "block";
+  })
+}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -74,7 +87,7 @@ export default {
     position: relative;
   }
   .gnb{
-    font-size: 1rem;
+    font-size: 18px;
     letter-spacing: 0.305em;
     }
   .gnb>li{
@@ -115,6 +128,18 @@ export default {
 
   .gnb>li:nth-child(5):hover .underline{
     width: 130px;
+  }
+
+  .subMenu{
+    display: none;
+    position: absolute;
+    top:200px;
+    left:-80px;
+    font-size:18px;
+  }
+
+  .subMenu li{
+    margin-bottom: 25px;
   }
 
   @media all and (max-width:1023px){

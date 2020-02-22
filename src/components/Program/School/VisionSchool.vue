@@ -7,7 +7,9 @@
         <p class="par">꿈과 비전을 찾는 기초훈련과정</p>
         <section>
           <!-- 임시 이미지 -->
+          <div class="roadmap">
           <img src="../../../assets/visionschool_roadmap.png" alt="">
+          </div>
           <!-- <h2><img src="" alt="자아발견과정">자아발견과정</h2>
           <ul class="">
             <li class="blue box">

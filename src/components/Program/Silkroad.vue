@@ -3,15 +3,17 @@
     <SubTitle v-bind:titledata = "title"></SubTitle>
     <div class="program slikroad">
       <div class="contents">
-        <h2>
-          <span></span>
-          <span>
+        <h2 class="img">
+          <span class="icon"><img src="../../assets/icon_silkroad.png" alt=""></span>
+          <span class="txt">
             실력있는<br>
             크리에이터가<br>
             되는 길
           </span>
+          <div>
           살아가면서 필요한 지혜들을 강연을 통해 공유하고<br>
           함께 배워보는 강연 프로그램
+          </div>
         </h2>
         <p>인문학,철학,경제,시간관리,인간관계,공부,습관에 이르기까지...<br>
         다양한 삶의 지혜들을 윤성화 소장님의 직강을 통해 함께 공부해보는 시간입니다.<br><br>

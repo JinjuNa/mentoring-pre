@@ -9,7 +9,7 @@
       </ul> -->
 
       <div class="slider">
-        <carousel :per-page="1" :mouse-drag="true">
+        <carousel :per-page="1" :mouse-drag="true" >
           <slide>
             <img src="../../assets/slide1.png">
           </slide>
