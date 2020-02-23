@@ -27,15 +27,19 @@
            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
       </div>
     </div>
+    <SubCircle></SubCircle>
   </div>
 </template>
 
 <script>
 import SubTitle from './Sub/SubTitle'
+import SubCircle from './Sub/SubCircle'
+
 export default {
   name: 'Vision',
   components : {
-    SubTitle
+    SubTitle,
+    SubCircle
   },
   data : function() {
 return {

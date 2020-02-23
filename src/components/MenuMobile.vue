@@ -1,6 +1,6 @@
 <template>
   <div class="menuMobile">
-    <div class="menuButton" id="menuButtonM">
+    <div class="menuButton" id="menuButtonM" v-on:click = "clickMenu">
       <span></span>
       <span></span>
       <span></span>
@@ -53,13 +53,13 @@
 <script>
 
 window.onload = function(){
-  document.getElementById("menuButtonM").onclick = function(){
-    var gnb = document.getElementById("gnbM");
-    if(gnb.style.display == "none")
-      gnb.style.display = "block";
-    else
-      gnb.style.display = "none";
-  }
+//   document.getElementById("menuButtonM").onclick = function(){
+//     var gnb = document.getElementById("gnbM");
+//     if(gnb.style.display == "none")
+//       gnb.style.display = "block";
+//     else
+//       gnb.style.display = "none";
+//   }
 
   const ul = document.querySelector('#gnbM');
   // if(!ul){
@@ -68,7 +68,7 @@ window.onload = function(){
   const li = ul.querySelectorAll('li');
   li.forEach(function(e){
     e.addEventListener('click', function(){
-      ul.style.display = "none";
+      ul.classList.remove('active');
     })
   })
 
@@ -92,6 +92,12 @@ export default {
         {text : "실크로드", url : "/program/silkroad"}
       ]
     };
+},
+methods : {
+  clickMenu : function(){
+    var gnb = document.getElementById("gnbM");
+      gnb.classList.toggle('active');
+  }
 }
 }
 </script>
@@ -106,7 +112,6 @@ export default {
         top: 20px; */
         width:100%;
         z-index: 10;
-        background-color: white;
         margin-top:50px;
 
     }
@@ -134,12 +139,12 @@ export default {
     letter-spacing: 0.305em;
     }
   .gnb>li{
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 
   }
 
   .gnb>li:nth-child(3){
-      margin-bottom: 25px;
+      padding-bottom: 25px;
   }
   .gnb>li a{
     position: relative;
@@ -158,7 +163,40 @@ export default {
 
   /* 폰트 모양, 크기에 따라서 left값 조정필요 */
 
-  .gnb>li:nth-child(1):hover>a>.underline{
+  
+.subMenu{
+    margin-top:25px;
+}
+  .subMenu>li{
+      height: 50px;
+      line-height: 50px;
+  }
+
+  #gnbM{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+    background-color: white;
+  }
+  #gnbM.active{
+    opacity: 1;
+    /* display: block; */
+    /* animation: fade-in 1s; */
+  }
+
+  @media all and (max-width:1023px){
+    .menuMobile{
+      display: block;
+    }
+    .menuButton span{
+      width:25px;
+      height: 3px;
+      margin-bottom: 6px;
+    }
+    .subMenu{
+        background-color: #eeeeee;
+    }
+
+    /* .gnb>li:nth-child(1):hover>a>.underline{
     width: 92px;
   }
 
@@ -176,37 +214,6 @@ export default {
 
   .gnb>li:nth-child(5):hover>a>.underline{
     width: 130px;
-  }
-.subMenu{
-    margin-top:25px;
-}
-  .subMenu>li{
-      height: 50px;
-      line-height: 50px;
-  }
-
-  @media all and (max-width:1023px){
-    .menuMobile{
-      display: block;
-
-    }
-
-    /* .menuMobileWrap{
-      position: absolute;
-      top:0;
-      left:0;
-    } */
-    .menuButton span{
-      width:25px;
-      height: 3px;
-      margin-bottom: 6px;
-    }
-    .gnb{
-      display: none;
-    }
-
-    .subMenu{
-        background-color: #eeeeee;
-    }
+  } */
   }
 </style>

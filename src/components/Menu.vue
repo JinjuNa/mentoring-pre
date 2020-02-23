@@ -6,13 +6,13 @@
       <span></span>
     </div>
     <ul class="gnb" id="gnb">
-        <li v-bind:key="item.text" v-for="item in menu" >
-          <router-link :to="item.url">{{item.text}}<div class="underline"></div></router-link>
+        <li v-bind:key="item.text" v-for="(item, index) in menu" v-on:mouseover ="subOver(index)" v-on:mouseout = "subOut">
+          <router-link :to="item.url" >{{item.text}}<div class="underline"></div></router-link>
         </li>
     </ul>
 
     <ul class="subMenu">
-      <li v-bind:key="item.text" v-for="item in submenu" >
+      <li v-bind:key="item.text" v-for="item in submenu" v-on:click = "subHide">
           <router-link :to="item.url">{{item.text}}<div class="underline"></div></router-link>
       </li>
     </ul>
@@ -21,7 +21,6 @@
 </template>
 
 <script>
-
 export default {
   name: 'Menu',
   data : function() {
@@ -44,24 +43,36 @@ export default {
   methods : {
     clickMenu : function(){
        var gnb = document.getElementById("gnb");
-    if(gnb.style.display == "none")
-      gnb.style.display = "block";
-    else
-      gnb.style.display = "none";
+      gnb.classList.toggle('active');
+    },
+    subOver : function(index){
+      const sub = document.querySelector('.subMenu');
+      sub.style.display = "none";
+      if(index != 2) return
+      
+      sub.style.display = "block";
+    },
+    // subOut : function(){
+    //   const sub = document.querySelector('.subMenu');
+    //   sub.style.display = "none";
+    // },
+    subHide : function(){
+      const sub = document.querySelector('.subMenu');
+      sub.style.display = "none";
     }
   }
 }
 
-window.onload = function(){
-  alert("hi");
-  const ul = document.querySelector('.gnb');
-  const li = ul.getElementsByTagName('li');
-  const sub = document.querySelector('.subMenu')
-  li[2].addEventListener('click', function(){
-    alert("hi");
-    sub.style.display == "block";
-  })
-}
+// window.onload = function(){
+//   alert("hi");
+//   const ul = document.querySelector('.gnb');
+//   const li = ul.getElementsByTagName('li');
+//   const sub = document.querySelector('.subMenu')
+//   li[2].addEventListener('click', function(){
+//     alert("hi");
+//     sub.style.display == "block";
+//   })
+// }
 
 </script>
 
@@ -140,6 +151,16 @@ window.onload = function(){
 
   .subMenu li{
     margin-bottom: 25px;
+  }
+
+  .gnb{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .gnb.active{
+    opacity: 1;
+    /* display: block; */
+    /* animation: fade-in 1s; */
   }
 
   @media all and (max-width:1023px){

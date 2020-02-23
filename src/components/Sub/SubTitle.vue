@@ -2,7 +2,6 @@
     <div class="sub_title">
         <img class="sub_effect" src="../../assets/sub_effect.png" alt="">
         <p class="title_text">
-            <!-- VISION -->
             {{titledata}}
         </p>
     </div>

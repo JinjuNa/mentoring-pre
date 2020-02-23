@@ -41,9 +41,27 @@ export default {
   components : {
     Carousel,
     Slide
+  },
+  mounted : function(){
+    const ul = document.querySelector('.VueCarousel-dot-container'),
+       btn= ul.querySelector('button');
+       // eslint-disable-next-line no-console
+       console.log(btn);
+
+       btn.forEach((element, index) => {
+         element.innerHTML = "0"+(index+1)
+       })
+
+    // btn.forEach((element,index) => {
+    //     element.innerHTML = '0'+(index+1);
+    // });
   }
 
 }
+
+
+
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
@@ -55,6 +73,12 @@ export default {
     display: none;
   }
 
+ 
+  /* .VueCarousel-dot-container .VueCarousel-dot:nth-child(1)::after{
+    content: '1';
+    display: block;
+  } */
+
   @media all and (max-width:1023px){
     .mobileSlider{
       display: block;
@@ -63,5 +87,7 @@ export default {
     .pcSlider{
       display: none;
     }
+
+
   }
 </style>

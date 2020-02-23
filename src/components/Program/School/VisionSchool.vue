@@ -8,7 +8,7 @@
         <section>
           <!-- 임시 이미지 -->
           <div class="roadmap">
-          <img src="../../../assets/visionschool_roadmap.png" alt="">
+          <img src="../../../assets/roadmap.svg" alt="">
           </div>
           <!-- <h2><img src="" alt="자아발견과정">자아발견과정</h2>
           <ul class="">
