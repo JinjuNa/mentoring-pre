@@ -2,7 +2,7 @@
   <div class="sub">
     <SubTitle v-bind:titledata = "title"></SubTitle>
     <!--  -->
-    <div class="recruit">
+    <div class="contact">
       <div class="contents">
         <h2><div class="icon_contact"><img src="../assets/icon_contact.png"></div></h2>
         <p>
@@ -45,22 +45,4 @@ return {
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.icon_contact{
-  width:160px;
-  margin:0 auto;
-}
-.sns li{
-  width:30px;
-}
-
-.sns li img{
-  width:100%;
-}
-.map iframe{
-  width:100%;
-  height: 500px;
-}
-/* .title{
-  margin-right:10%;
-} */
 </style>

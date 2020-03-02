@@ -1,35 +1,26 @@
 <template>
   <div class="menu">
-    <div class="menuButton" id="menuButton">
+    <div class="menuButton" id="menuButton" v-on:click = "clickMenu">
       <span></span>
       <span></span>
       <span></span>
     </div>
     <ul class="gnb" id="gnb">
-        <li v-bind:key="item.text" v-for="item in menu" >
-          <router-link :to="item.url">{{item.text}}<div class="underline"></div></router-link>
+        <li v-bind:key="item.text" v-for="(item, index) in menu" v-on:mouseover ="subOver(index)" v-on:mouseout = "subOut">
+          <router-link :to="item.url" >{{item.text}}<div class="underline"></div></router-link>
         </li>
     </ul>
 
     <ul class="subMenu">
-      <li v-bind:key="item.text" v-for="item in submenu" >
+      <li v-bind:key="item.text" v-for="item in submenu" v-on:click = "subHide">
           <router-link :to="item.url">{{item.text}}<div class="underline"></div></router-link>
       </li>
     </ul>
   </div>
+
 </template>
 
 <script>
-
-window.onload = function(){
-  document.getElementById("menuButton").onclick = function(){
-    var gnb = document.getElementById("gnb");
-    if(gnb.style.display == "none")
-      gnb.style.display = "block";
-    else
-      gnb.style.display = "none";
-  }
-}
 export default {
   name: 'Menu',
   data : function() {
@@ -48,14 +39,50 @@ export default {
         {text : "실크로드", url : "/program/silkroad"}
       ]
     };
+  },
+  methods : {
+    clickMenu : function(){
+       var gnb = document.getElementById("gnb");
+      gnb.classList.toggle('active');
+    },
+    subOver : function(index){
+      const sub = document.querySelector('.subMenu');
+      sub.style.display = "none";
+      if(index != 2) return
+      
+      sub.style.display = "block";
+    },
+    // subOut : function(){
+    //   const sub = document.querySelector('.subMenu');
+    //   sub.style.display = "none";
+    // },
+    subHide : function(){
+      const sub = document.querySelector('.subMenu');
+      sub.style.display = "none";
+    }
+  }
 }
-}
+
+// window.onload = function(){
+//   alert("hi");
+//   const ul = document.querySelector('.gnb');
+//   const li = ul.getElementsByTagName('li');
+//   const sub = document.querySelector('.subMenu')
+//   li[2].addEventListener('click', function(){
+//     alert("hi");
+//     sub.style.display == "block";
+//   })
+// }
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .menuButton{
     float:right;
+    position: relative;
+    z-index: 99;
+    cursor: pointer;
     
   }
   .menuButton span{
@@ -68,9 +95,10 @@ export default {
 
   .gnb, .subMenu{
     z-index: 10;
+    position: relative;
   }
   .gnb{
-    font-size: 1rem;
+    font-size: 18px;
     letter-spacing: 0.305em;
     }
   .gnb>li{
@@ -111,6 +139,28 @@ export default {
 
   .gnb>li:nth-child(5):hover .underline{
     width: 130px;
+  }
+
+  .subMenu{
+    display: none;
+    position: absolute;
+    top:200px;
+    left:-80px;
+    font-size:18px;
+  }
+
+  .subMenu li{
+    margin-bottom: 25px;
+  }
+
+  .gnb{
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+  }
+  .gnb.active{
+    opacity: 1;
+    /* display: block; */
+    /* animation: fade-in 1s; */
   }
 
   @media all and (max-width:1023px){

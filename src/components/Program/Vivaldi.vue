@@ -4,16 +4,18 @@
     <!--  -->
     <div class="program vivaldi">
       <div class="contents">
-        <h2>
-          <span></span>
-          <span>
+        <h2 class="img">
+          <span class="icon"><img src="../../assets/icon_vivaldi.png"></span>
+          <span class="txt">
             비전을<br>
             발견하고<br>
            디자인하라<br>
           </span>
+          <div>
           꿈과 비전을 찾아가는 사람들이 한 자리에 모여서<br>
           각자의 꿈과 비전을 어떤 방식으로 찾아가는지<br>
           혹은 지금의 고민이 무엇인지를 나누는 네트워킹 파티
+          </div>
         </h2>
         <p>아이스브레이킹,강연,공연,네트워킹 파티로 이어지는<br>
         알짜배기 하루를 보내고 싶다면 강력 추천합니다.<br><br>

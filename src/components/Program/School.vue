@@ -16,7 +16,7 @@
           새로운 배움의 장(場)을 경험할 수 있습니다.</p>
         <!-- <p class="process">SCHOOL PROCESS</p> -->
         <ul class="schoolMenu">
-          <li v-bind:key="item.text" v-for="item in menu" >
+          <li v-bind:key="item.text" v-for="item in menu">
             <router-link :to="item.url">{{item.text}}</router-link>
           </li>
         </ul>
@@ -46,22 +46,6 @@ return {
       ]
   };
 }
-}
-window.onload = function(){
-  const ul = document.querySelector('.schoolMenu');
-  if(!ul){
-    return false;
-  }
-  const li = ul.querySelectorAll('li');
-  li[0].classList.add('active');
-  li.forEach(function(e){
-    e.addEventListener('click', function(){
-      for(var i=0; i<li.length; i++){
-        li[i].classList.remove('active');
-      }
-      this.classList.add('active');
-    })
-  })
 }
 
 </script>

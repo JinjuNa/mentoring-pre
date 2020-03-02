@@ -10,24 +10,23 @@
         <p class="par">교육에 대한 열정이 남다르고 아이디어가 넘쳐나는 사람들은<br>
         절대로 현재에 머무르려고 하지 않는다고 믿습니다.<br><br>
         그래서 저희 회사에는 없는 것이 다음과 같습니다.</p>
-      </div>
-
-      <div class="icon">
-        <div id="upmargin">
-          <div class="subicon up">
-            <div class="char1">
-              <h2><img src="../assets/icon_recruit01.png"></h2>
-              <h3><span class="num">01</span>직급이 없습니다.</h3><div class="numback"></div>
-              <p class="far">동등한 관계에서만 좋은 아이디어가 나온다고 믿기 때문입니다.<br>
-              그래서 모두 'oo씨'라고 부릅니다.</p>
-            </div>
-            
-            <div class="char1">
-              <h2><img src="../assets/icon_recruit02.png"></h2>
-              <h3><span class="num">02</span>야근이 없습니다.</h3><div class="numback"></div>
-              <p class="far">모든 직원이 재택근무를 하기 때문에 야근이 없습니다.<br>
-              대신 주어진 일을 책임 있게 해내지 못하면 불이익이 있습니다.<br>
-              월 2회 전체회의 4시간은 필참입니다.</p>
+        <div class="icon">
+          <div id="upmargin">
+            <div class="subicon up">
+              <div class="char1">
+                <h2><img src="../assets/icon_recruit01.png"></h2>
+                <h3><span class="num">01</span>직급이 없습니다.</h3><div class="numback"></div>
+                <p class="far">동등한 관계에서만 좋은 아이디어가 나온다고 믿기 때문입니다.<br>
+                그래서 모두 'oo씨'라고 부릅니다.</p>
+              </div>
+              
+              <div class="char1">
+                <h2><img src="../assets/icon_recruit02.png"></h2>
+                <h3><span class="num">02</span>야근이 없습니다.</h3><div class="numback"></div>
+                <p class="far">모든 직원이 재택근무를 하기 때문에 야근이 없습니다.<br>
+                대신 주어진 일을 책임 있게 해내지 못하면 불이익이 있습니다.<br>
+                월 2회 전체회의 4시간은 필참입니다.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -84,8 +83,6 @@
       </ul>
       <div class="download"><a href="#">지원서 다운로드</a></div>
     </section>
-  
-  </div>
 </template>
 
 <script>

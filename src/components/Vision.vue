@@ -5,7 +5,7 @@
       <div class="contents">
         <h2>실력과 인성을 겸비한 청년들을 양성하는 곳,<br>
          여기는 MENTORING LAB 입니다.</h2>
-        <div>
+        <div class="diagram">
           <img src="../assets/vision_diagram.png">
         </div>
         <p class="par">사람들에게 잘 보이기 위한 삶에서 벗어나서<br>
@@ -27,15 +27,19 @@
            and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> -->
       </div>
     </div>
+    <SubCircle></SubCircle>
   </div>
 </template>
 
 <script>
 import SubTitle from './Sub/SubTitle'
+import SubCircle from './Sub/SubCircle'
+
 export default {
   name: 'Vision',
   components : {
-    SubTitle
+    SubTitle,
+    SubCircle
   },
   data : function() {
 return {
@@ -47,28 +51,10 @@ return {
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  .contents{
-    width: 61%;
-    margin: 0 auto;
-  }
-
-  .sub{
-    background-image: url(../assets/background_side.png);
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    background-position: center bottom;
-  }
-
-  .contents img{
-    width: 100%;
-    height: auto;
-    /* text-align: center;  이렇게는 안된다.*/
-  }
+    
 
   @media all and (max-width:1023px){
-    .contents{
-      width:95%;
-    }
+
   }
 
 

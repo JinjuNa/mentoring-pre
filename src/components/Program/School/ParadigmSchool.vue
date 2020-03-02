@@ -23,7 +23,7 @@ export default {
 return {
     title : {
       text : "패러다임스쿨",
-      img : "paradigmschool.png"
+      img : require("../../../assets/paradigmschool.png")
       // 경로 수정!
     }
   };
