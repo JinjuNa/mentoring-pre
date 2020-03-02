@@ -92,7 +92,7 @@ window.onload = function(){
     border-bottom: 2px solid #3642c6;
   }
 
-  .schoolMenu::after{
+  .schoolMenu:after{
     display: block;
     clear: both;
     content:'';

@@ -2,7 +2,7 @@
   <div class="sub">
     <SubTitle v-bind:titledata = "title"></SubTitle>
     <!--  -->
-    <div class="recruit">
+    <section class="recruit">
       <div class="contents">
         <h2>월급만 필요하다면 지원하지 마세요<br>
         우리는 의미 있는 일을 하려고 합니다<br>
@@ -31,6 +31,7 @@
             </div>
           </div>
         </div>
+
         <div class="subicon down">
           <div class="char2">
             <h2><img src="../assets/icon_recruit03.png"></h2>
@@ -39,7 +40,6 @@
             대표가 회식을 싫어합니다.<br>
             회식비 모았다가 해외 워크샵 갑니다.</p>
           </div>
-
           <div class="char2">
             <h2><img src="../assets/icon_recruit04.png"></h2>
             <h3><span class="num">04</span>경력직이 없습니다.</h3><div class="numback1"></div>
@@ -47,9 +47,10 @@
             3년 이후에는 회사를 설립하여 파트너쉽을 맺어 일을 함께 합니다.<br>
             3년 이상 일하고 싶을 때는 합당한 사유서를 제출해야 합니다.</p>
           </div>
-        </div>    
+        </div>   
       </div>
-    </div>
+    </section>
+
     <section class="business">
       <ul class="businesstype">
         <li class="type">
@@ -83,6 +84,7 @@
       </ul>
       <div class="download"><a href="#">지원서 다운로드</a></div>
     </section>
+  
   </div>
 </template>
 
@@ -103,7 +105,7 @@ return {
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  .par{
+  .par{ 
     margin-bottom: 5.06em;
   }
   .num{
@@ -181,7 +183,7 @@ return {
     left: 50%;
   }
 
-  .subicon::after{
+  .subicon:after{
     display: block;
     clear: both;
     content: '';
