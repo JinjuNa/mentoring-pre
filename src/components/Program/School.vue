@@ -52,33 +52,5 @@ return {
   
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-  .schoolMenu li{
-    width: 25%;
-    float: left;
-    text-align: center;
-    font-size: 15px;
-    color: #3642c6;
-    height: 30px;
-    line-height: 30px;
-  }
-
-  .schoolMenu li.active{
-    background-color: #3642c6;
-    color: #c4f580;
-  }
-
-  .schoolMenu li a{
-    display: block;
-    width:100%;
-  }
-
-  .schoolMenu{
-    border-bottom: 2px solid #3642c6;
-  }
-
-  .schoolMenu:after{
-    display: block;
-    clear: both;
-    content:'';
-  }
+  
 </style>
