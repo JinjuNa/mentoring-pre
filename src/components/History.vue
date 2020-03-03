@@ -7,6 +7,7 @@
         <div class="historyImg">
           <img src="../assets/history.png">
         </div>
+        수정수정수정??
         <!-- <div class="gray">OUR START</div>
         <div class="yearBox right">
           <h2>2012</h2>
