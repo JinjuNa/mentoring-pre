@@ -7,6 +7,7 @@
         <div class="historyImg">
           <img src="../assets/history.png">
         </div>
+        <!-- ddddd -->
         <!-- <div class="gray">OUR START</div>
         <div class="yearBox right">
           <h2>2012</h2>
