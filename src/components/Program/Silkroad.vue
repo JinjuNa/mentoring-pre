@@ -20,7 +20,7 @@
         격월로 행사가 진행되며 연령,성별,직업에 상관없이 누구든 참여 가능합니다.
         </p>
       </div>
-      <a href="#">연간 멤버십 할인받기</a>
+      <div class="download"><a href="#">연간 멤버십 할인받기</a></div>
     </div>
   </div>
 </template>
