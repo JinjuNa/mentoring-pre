@@ -635,7 +635,10 @@
         margin-bottom: 110px;
       }
 
-
+    /* vivaldi */
+    .contents.programcontent{
+      text-align: center;
+    }
     /* recruit */
 
     .char1, .char2{
